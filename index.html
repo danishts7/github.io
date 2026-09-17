@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Danishts | IT Networking Support & Amazon Virtual Assistant – Karachi & Remote</title>
+<meta name="description" content="Professional IT networking support in Karachi and remote Amazon Virtual Assistant services worldwide. Network setup, system monitoring, and Amazon Private Label consulting by Danishts.">
+<meta name="keywords" content="IT networking support Karachi, Amazon virtual assistant, Amazon Private Label consultant, remote IT support, network setup Karachi, Amazon PPC forecasting, office network design">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%230B1120%22/><circle cx=%2250%22 cy=%2250%22 r=%2222%22 fill=%22none%22 stroke=%22%2306B6D4%22 stroke-width=%228%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0A0F1C;
+    --bg-alt:#0D1526;
+    --panel:#101A2E;
+    --panel-border:#1E2A44;
+    --cyan:#22D3EE;
+    --cyan-dim:#0E7490;
+    --amber:#F5A524;
+    --text:#E7ECF3;
+    --text-dim:#8B9AB3;
+    --line:#1B2740;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Inter',sans-serif;
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.logo{font-family:'Space Grotesk',sans-serif;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  section{scroll-margin-top:72px;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+
+  /* ---------- NAV ---------- */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    background:rgba(10,15,28,0.85);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  nav{display:flex;align-items:center;justify-content:space-between;height:72px;}
+  .logo{font-size:1.3rem;font-weight:700;color:var(--text);display:flex;align-items:center;gap:8px;}
+  .logo span{color:var(--cyan);}
+  .nav-links{display:flex;align-items:center;gap:8px;list-style:none;}
+  .nav-links a{
+    padding:8px 16px;border-radius:6px;font-size:0.95rem;color:var(--text-dim);
+    transition:color .2s ease;
+  }
+  .nav-links a:hover{color:var(--text);}
+  .nav-links .cta-btn{
+    background:var(--amber);color:#1A1200;font-weight:600;padding:9px 18px;border-radius:6px;
+  }
+  .nav-links .cta-btn:hover{background:#ffb63d;color:#1A1200;}
+  .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;}
+  .burger span{width:24px;height:2px;background:var(--text);display:block;}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;align-items:center;
+    padding-top:72px;
+    background:
+      radial-gradient(circle at 78% 30%, rgba(34,211,238,0.12), transparent 45%),
+      radial-gradient(circle at 15% 80%, rgba(245,165,36,0.08), transparent 40%),
+      var(--bg);
+    overflow:hidden;
+  }
+  .hero-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:40px;align-items:center;width:100%;}
+  .eyebrow{color:var(--cyan);font-size:0.85rem;letter-spacing:0.02em;margin-bottom:14px;display:flex;align-items:center;gap:8px;}
+  .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--amber);}
+  .hero h1{font-size:clamp(2rem,4.2vw,3.4rem);font-weight:700;line-height:1.15;margin-bottom:20px;max-width:620px;}
+  .hero h1 em{color:var(--cyan);font-style:normal;}
+  .hero p{color:var(--text-dim);font-size:1.08rem;max-width:520px;margin-bottom:32px;}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn-primary{
+    background:var(--amber);color:#1A1200;font-weight:600;padding:14px 26px;border-radius:8px;
+    display:inline-flex;align-items:center;gap:8px;transition:transform .2s ease, background .2s ease;
+  }
+  .btn-primary:hover{background:#ffb63d;transform:translateY(-2px);}
+  .btn-secondary{
+    border:1px solid var(--panel-border);color:var(--text);padding:14px 26px;border-radius:8px;
+    transition:border-color .2s ease, background .2s ease;
+  }
+  .btn-secondary:hover{border-color:var(--cyan);background:rgba(34,211,238,0.06);}
+
+  .network-art{position:relative;height:420px;}
+  .network-art svg{width:100%;height:100%;}
+  .n-line{stroke:var(--cyan-dim);stroke-width:1.4;fill:none;stroke-dasharray:6 460;stroke-dashoffset:0;animation:draw 2.6s ease forwards;}
+  .n-line.delay1{animation-delay:.15s;}
+  .n-line.delay2{animation-delay:.3s;}
+  .n-line.delay3{animation-delay:.45s;}
+  .n-node{fill:var(--bg-alt);stroke:var(--cyan);stroke-width:2;}
+  .n-node.pulse{animation:pulse 2.6s ease-in-out infinite;}
+  .n-node.amber{stroke:var(--amber);}
+  @keyframes draw{from{stroke-dasharray:6 900;stroke-dashoffset:0;opacity:0;}to{stroke-dasharray:900 0;opacity:1;}}
+  @keyframes pulse{0%,100%{r:5;}50%{r:8;}}
+
+  .stat-row{display:flex;gap:36px;margin-top:44px;flex-wrap:wrap;}
+  .stat-row div p:first-child{font-family:'Space Grotesk',sans-serif;font-size:1.6rem;font-weight:700;color:var(--text);}
+  .stat-row div p:last-child{color:var(--text-dim);font-size:0.85rem;}
+
+  /* ---------- SECTION HEADS ---------- */
+  .section{padding:100px 0;}
+  .section-head{max-width:640px;margin-bottom:56px;}
+  .section-tag{color:var(--amber);font-size:0.85rem;font-weight:600;margin-bottom:10px;}
+  .section-head h2{font-size:clamp(1.6rem,3vw,2.3rem);font-weight:700;margin-bottom:14px;}
+  .section-head p{color:var(--text-dim);}
+
+  /* ---------- ABOUT ---------- */
+  .about{background:var(--bg-alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .about-grid{display:grid;grid-template-columns:280px 1fr;gap:56px;align-items:start;}
+  .about-photo{
+    width:100%;aspect-ratio:1/1;border-radius:12px;overflow:hidden;
+    border:1px solid var(--panel-border);background:var(--panel);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .about-photo img{width:100%;height:100%;object-fit:cover;}
+  .about-photo .placeholder{color:var(--text-dim);text-align:center;font-size:0.85rem;padding:20px;}
+  .about-photo .placeholder svg{width:64px;height:64px;color:var(--cyan-dim);margin-bottom:10px;}
+  .about-text h3{font-size:1.3rem;margin-bottom:16px;}
+  .about-text p{color:var(--text-dim);margin-bottom:16px;max-width:640px;}
+  .badge-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;}
+  .badge{border:1px solid var(--panel-border);color:var(--text-dim);font-size:0.8rem;padding:6px 12px;border-radius:20px;}
+
+  /* ---------- SERVICES ---------- */
+  .service-group{margin-bottom:64px;}
+  .service-group-head{display:flex;align-items:baseline;gap:14px;margin-bottom:28px;border-bottom:1px solid var(--line);padding-bottom:16px;}
+  .service-group-head h3{font-size:1.3rem;}
+  .service-group-head span{color:var(--text-dim);font-size:0.85rem;}
+  .service-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;}
+  .card{
+    background:var(--panel);border:1px solid var(--panel-border);border-left:3px solid var(--cyan);
+    border-radius:6px;padding:24px;
+    transform-style:preserve-3d;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
+    will-change:transform;
+  }
+  .card.amber{border-left-color:var(--amber);}
+  .card:hover{box-shadow:0 20px 40px -20px rgba(0,0,0,0.6);}
+  .card svg{width:30px;height:30px;color:var(--cyan);margin-bottom:16px;}
+  .card.amber svg{color:var(--amber);}
+  .card h4{font-size:1.05rem;margin-bottom:8px;}
+  .card p{color:var(--text-dim);font-size:0.92rem;}
+
+  /* ---------- CONTACT ---------- */
+  .contact{background:var(--bg-alt);border-top:1px solid var(--line);position:relative;overflow:hidden;}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;}
+  .contact-info{display:flex;flex-direction:column;gap:22px;}
+  .contact-row{display:flex;align-items:center;gap:14px;}
+  .contact-row .icon-box{
+    width:42px;height:42px;border-radius:8px;background:var(--panel);border:1px solid var(--panel-border);
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  }
+  .contact-row .icon-box svg{width:20px;height:20px;color:var(--cyan);}
+  .contact-row p{color:var(--text-dim);font-size:0.8rem;}
+  .contact-row a,.contact-row span.value{color:var(--text);font-weight:500;}
+  .whatsapp-panel{
+    background:var(--panel);border:1px solid var(--panel-border);border-radius:12px;padding:36px;text-align:center;
+  }
+  .whatsapp-panel h3{margin-bottom:10px;font-size:1.3rem;}
+  .whatsapp-panel p{color:var(--text-dim);margin-bottom:24px;font-size:0.92rem;}
+  .btn-whatsapp{
+    background:#25D366;color:#052E14;font-weight:700;padding:15px 28px;border-radius:8px;
+    display:inline-flex;align-items:center;gap:10px;font-size:1rem;transition:transform .2s ease;
+  }
+  .btn-whatsapp:hover{transform:translateY(-2px);}
+  .btn-whatsapp svg{width:22px;height:22px;}
+
+  footer{padding:30px 0;text-align:center;color:var(--text-dim);font-size:0.85rem;border-top:1px solid var(--line);}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width:860px){
+    .hero-grid{grid-template-columns:1fr;}
+    .network-art{height:260px;order:-1;}
+    .about-grid{grid-template-columns:1fr;}
+    .about-photo{width:180px;}
+    .contact-grid{grid-template-columns:1fr;}
+    .nav-links{
+      position:fixed;top:72px;right:0;left:0;background:var(--bg);
+      flex-direction:column;align-items:stretch;padding:16px;border-bottom:1px solid var(--line);
+      transform:translateY(-150%);transition:transform .25s ease;
+    }
+    .nav-links.open{transform:translateY(0);}
+    .nav-links a{padding:14px 16px;border-bottom:1px solid var(--line);border-radius:0;}
+    .burger{display:flex;}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .n-line,.n-node.pulse{animation:none;}
+    html{scroll-behavior:auto;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a href="#home" class="logo">Danish<span>ts</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact" class="cta-btn">Contact</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<!-- ================= HOME ================= -->
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow"><span class="dot"></span> Karachi, Pakistan · Serving clients worldwide</div>
+      <h1>IT Networking Expert &amp; <em>Amazon Virtual Assistant</em></h1>
+      <p>Reliable network setup, IT support, and Amazon Private Label consulting — for businesses in Karachi and remote clients across Dubai, the USA, and beyond.</p>
+      <div class="hero-ctas">
+        <a href="https://wa.me/923213434423?text=Hi%20Danish%2C%20I%20found%20your%20website%20and%20want%20to%20discuss%20a%20project." target="_blank" class="btn-primary">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.09-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18a7.9 7.9 0 01-4.24-1.22l-.3-.19-3.02.79.8-2.95-.2-.3A7.93 7.93 0 014 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/></svg>
+          Chat on WhatsApp
+        </a>
+        <a href="#services" class="btn-secondary">View Services</a>
+      </div>
+      <div class="stat-row">
+        <div><p>Dual-WAN</p><p>Enterprise network design</p></div>
+        <div><p>Karachi</p><p>On-site &amp; remote support</p></div>
+        <div><p>Amazon PL</p><p>End-to-end consulting</p></div>
+      </div>
+    </div>
+    <div class="network-art">
+      <svg viewBox="0 0 400 400">
+        <path class="n-line" d="M60 90 L200 60 L340 100" />
+        <path class="n-line delay1" d="M200 60 L200 200" />
+        <path class="n-line delay2" d="M60 90 L60 260 L150 320" />
+        <path class="n-line delay3" d="M340 100 L340 260 L250 320" />
+        <path class="n-line delay2" d="M200 200 L150 320" />
+        <path class="n-line delay3" d="M200 200 L250 320" />
+        <circle class="n-node amber pulse" cx="200" cy="60" r="7"/>
+        <circle class="n-node" cx="60" cy="90" r="6"/>
+        <circle class="n-node" cx="340" cy="100" r="6"/>
+        <circle class="n-node pulse" cx="200" cy="200" r="7"/>
+        <circle class="n-node" cx="60" cy="260" r="6"/>
+        <circle class="n-node" cx="340" cy="260" r="6"/>
+        <circle class="n-node" cx="150" cy="320" r="6"/>
+        <circle class="n-node" cx="250" cy="320" r="6"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-photo">
+      <!-- Replace this block with: <img src="assets/danish-photo.jpg" alt="Danish - Founder of Danishts"> -->
+      <div class="placeholder">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+        Your photo goes here
+      </div>
+    </div>
+    <div class="about-text">
+      <div class="section-tag">About</div>
+      <h3>Danish — Self-Taught IT &amp; E-commerce Specialist</h3>
+      <p>I'm Danish, founder of Danishts, based in Karachi, Pakistan. I'm a self-taught IT and networking professional with hands-on experience designing complete office network infrastructures — from small office LAN setups to enterprise-grade dual-WAN networks with load balancing, CCTV integration, and centralized data backup systems.</p>
+      <p>Alongside IT, I work as an Amazon Private Label consultant, helping sellers with product research, listing optimization, and full business launch planning.</p>
+      <p>I serve clients physically in Karachi and remotely across Pakistan and worldwide — including Dubai, the USA, and beyond — bringing reliable, practical, and result-driven solutions to every project.</p>
+      <div class="badge-row">
+        <span class="badge">Network Design</span>
+        <span class="badge">Amazon Private Label</span>
+        <span class="badge">Remote IT Support</span>
+        <span class="badge">WhatsApp AI Automation</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag">Services</div>
+      <h2>What I Can Help You With</h2>
+      <p>Two areas of expertise, one goal: making your systems and your business run better.</p>
+    </div>
+
+    <div class="service-group">
+      <div class="service-group-head">
+        <h3>IT Networking &amp; Infrastructure Support</h3>
+        <span>Karachi on-site · Remote worldwide</span>
+      </div>
+      <div class="service-grid">
+        <div class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="7" rx="1"/><path d="M7 11V7a5 5 0 0110 0v4M7 15h.01M12 15h.01"/></svg>
+          <h4>Network Design &amp; Setup</h4>
+          <p>Office LAN/WiFi setup, dual-WAN &amp; load balancer configuration, and CCTV network integration.</p>
+        </div>
+        <div class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v6M12 22v-6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M2 12h6M16 12h6M4.9 19.1l4.2-4.2M14.9 9.1l4.2-4.2"/></svg>
+          <h4>File Server &amp; Backup</h4>
+          <p>Centralized file server, shared folders, printer sharing, and cloud + local backup systems.</p>
+        </div>
+        <div class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4M12 3l8 4v5c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V7l8-4z"/></svg>
+          <h4>Monitoring &amp; IT Audits</h4>
+          <p>Ongoing system monitoring, network audits, and troubleshooting for hanging/slow PC issues.</p>
+        </div>
+        <div class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16v12H4z"/><path d="M9 20h6M12 16v4"/></svg>
+          <h4>Remote IT Support</h4>
+          <p>Day-to-day remote support for clients across Karachi and overseas — Dubai, USA and beyond.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-group">
+      <div class="service-group-head">
+        <h3>Amazon Private Label — Research &amp; Strategy</h3>
+        <span>Data-driven product decisions</span>
+      </div>
+      <div class="service-grid">
+        <div class="card amber">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <h4>Product Hunting &amp; Validation</h4>
+          <p>Finding profitable product opportunities and validating demand before you invest.</p>
+        </div>
+        <div class="card amber">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18M7 15l4-4 3 3 5-6"/></svg>
+          <h4>Competitor &amp; Keyword Research</h4>
+          <p>Deep competitor analysis and keyword data to guide listing and marketing decisions.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-group">
+      <div class="service-group-head">
+        <h3>Amazon Private Label — Launch &amp; Growth</h3>
+        <span>From plan to first sale</span>
+      </div>
+      <div class="service-grid">
+        <div class="card amber">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19V5M4 19h16M9 15l3-4 3 3 4-6"/></svg>
+          <h4>Listing SEO &amp; PPC Forecast</h4>
+          <p>Optimized listings, supplier negotiation support, budget planning and PPC ad forecasting.</p>
+        </div>
+        <div class="card amber">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="9"/></svg>
+          <h4>Full Launch Roadmap</h4>
+          <p>A step-by-step plan covering timeline, budget allocation, launch date and expected sales start.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-info">
+      <div class="section-tag">Contact</div>
+      <h2 style="margin-bottom:14px;">Let's Discuss Your Project</h2>
+      <p style="color:var(--text-dim);margin-bottom:10px;max-width:420px;">Every project is different, so let's talk directly about your needs and pricing.</p>
+
+      <div class="contact-row">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.12.9.33 1.78.63 2.62a2 2 0 01-.45 2.11L8.09 9.65a16 16 0 006 6l1.2-1.2a2 2 0 012.11-.45c.84.3 1.72.51 2.62.63A2 2 0 0122 16.92z"/></svg></div>
+        <div><p>WhatsApp / Phone</p><a href="tel:+923213434423" class="value">+92 321 3434423</a></div>
+      </div>
+      <div class="contact-row">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></div>
+        <div><p>Email</p><a href="mailto:info@danishts.com" class="value">info@danishts.com</a></div>
+      </div>
+      <div class="contact-row">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div><p>Location</p><span class="value">Karachi, Pakistan — On-site &amp; remote worldwide</span></div>
+      </div>
+    </div>
+
+    <div class="whatsapp-panel">
+      <h3>Prefer to talk directly?</h3>
+      <p>Tap below to message me on WhatsApp — I usually reply quickly.</p>
+      <a href="https://wa.me/923213434423?text=Hi%20Danish%2C%20I%20found%20your%20website%20and%20want%20to%20discuss%20a%20project." target="_blank" class="btn-whatsapp">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.09-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18a7.9 7.9 0 01-4.24-1.22l-.3-.19-3.02.79.8-2.95-.2-.3A7.93 7.93 0 014 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/></svg>
+        Chat on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">&copy; <span id="year"></span> Danishts. All rights reserved.</div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // mobile menu toggle
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+  // light 3D tilt on service cards
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const r = card.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5;
+        const y = (e.clientY - r.top) / r.height - 0.5;
+        card.style.transform = `perspective(600px) rotateY(${x * 6}deg) rotateX(${-y * 6}deg) translateY(-2px)`;
+      });
+      card.addEventListener('mouseleave', () => { card.style.transform = 'none'; });
+    });
+  }
+</script>
+</body>
+</html>
